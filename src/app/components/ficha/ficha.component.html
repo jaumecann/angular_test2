@@ -1,0 +1,29 @@
+<style>
+
+.frame {
+  border: solid 2px #1783ff;
+  width: 200px;
+  height: 250px;
+  margin-top: 10px;
+  background-color:#cdf5e7;
+
+}
+
+.iconsito {
+  width: 180px;
+}
+
+</style>
+
+<div style="display:flex; flex-wrap: wrap;">
+  <div class="frame"  *ngFor="let item of cities">
+    <div style="text-align: center;">
+    <h2>{{ item.name }}</h2>
+      <div><img class="iconsito" src={{item.img}}></div>
+    </div>
+  </div>
+</div>
+
+
+
+
